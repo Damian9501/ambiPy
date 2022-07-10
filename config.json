@@ -1,0 +1,11 @@
+{
+    "preconfig":{
+        "cameraPort":0,
+        "ledPort":0
+    },
+    "layout":{
+        "horizontal":13,
+        "vertical":7
+    },
+    "brightness":0.5
+}

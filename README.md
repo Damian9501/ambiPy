@@ -7,6 +7,11 @@ ambiPy is a low budget Philips Ambilight clone for *WS2812b Leds + RPi4* setup. 
 * Python3
 * Raspberry Pi 4b
 
+## Libraries
+* [JSON](https://www.geeksforgeeks.org/read-json-file-using-python)
+* [Neopixel WS2812B Control](https://learn.adafruit.com/neopixels-on-raspberry-pi/python-usage)
+* [OpenCV](https://www.geeksforgeeks.org/how-to-capture-a-image-from-webcam-in-python/)
+
 ## Prerequisites
 To run the whole system you need some things. Here is a list with required hardware to even start thinking about testing the software:
 * **Raspberry Pi 4b** *(or lower version, but didn't tested on others)*
