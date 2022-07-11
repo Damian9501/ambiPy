@@ -1,0 +1,6 @@
+* rpi_ws281x
+pip install rpi_ws281x
+* opencv
+pip install opencv-python
+* Pillow
+pip install --upgrade Pillow
