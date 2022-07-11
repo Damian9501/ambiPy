@@ -15,6 +15,8 @@ print('ambiPy v.' + VERSION + ' by Aleksander Heese \n' + breakText())
 
 cap = Capture()
 imgProc = ImageProcessor(config['layout']['horizontal'],config['layout']['vertical'])
+ledStrip = LedStrip(config['preconfig']['ledPort'])
+
 print(imgProc.calculateColors(imgProc.processImageArray(cap.captureImageArray())))
 
 #while(run):
