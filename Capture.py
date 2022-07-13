@@ -1,5 +1,4 @@
 import cv2
-import numpy as np
 
 class Capture:
     def __init__(self):
@@ -21,16 +20,15 @@ class Capture:
                 break
         return port
 
-    def captureImage(self):
-        result, image = self.cam.read()
-        cv2.imwrite('frame.png', image)
-        return result
-
     def captureImageArray(self):
         result, image = self.cam.read()
         if not result:
             raise Exception('Image not captured')
         return image
+
+    def captureImagePng(self):
+        result, image = self.cam.read()
+        cv2.imwrite('frame.png', image)
 
     def previewVideo(self):
         while(True):
@@ -48,10 +46,7 @@ class Capture:
 
 def capture_test():
     capture = Capture()
-    if capture.captureImage():
-        print('Captured successfully')
-    else:
-        print('An error occured while capturing')
+    capture.captureImagePng()
 
 def video_test():
     capture = Capture()
