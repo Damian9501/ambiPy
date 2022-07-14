@@ -6,11 +6,6 @@ class ImageProcessor:
         self.h = h
         self.v = v
 
-    def processImage(self, input, output):
-        img = Image.open(input)
-        resultImage = img.resize((self.h, self.v), resample=Image.Resampling.BILINEAR)
-        resultImage.save(output)
-
     def processImageArray(self, imageArray):
         img = Image.fromarray(imageArray)
         resultImage = img.resize((self.h, self.v), resample=Image.Resampling.BILINEAR)
@@ -29,6 +24,11 @@ class ImageProcessor:
         for i in range(0, self.h, 1):
             colorsList.append((image_rgb.getpixel((i, 0))))
         return colorsList
+
+    def processImage(self, input, output):
+        img = Image.open(input)
+        resultImage = img.resize((self.h, self.v), resample=Image.Resampling.BILINEAR)
+        resultImage.save(output)
 
 def imageProcessingTest():
     imageProcessor = ImageProcessor(13,7)
