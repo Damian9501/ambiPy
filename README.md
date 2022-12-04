@@ -12,6 +12,7 @@ ambiPy is a low budget Philips Ambilight clone for *WS2812b Leds + RPi4* setup. 
 * [rpi-ws281x](https://github.com/rpi-ws281x/rpi-ws281x-python/blob/master/examples/strandtest.py)
 * [OpenCV](https://www.geeksforgeeks.org/how-to-capture-a-image-from-webcam-in-python/)
 * [Pillow](https://pillow.readthedocs.io/en/stable/installation.html)
+* numpy
 
 ## Prerequisites
 To run the whole system you need some things. Here is a list with required hardware to even start thinking about testing the software:

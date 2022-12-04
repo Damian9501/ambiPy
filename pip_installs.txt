@@ -1,0 +1,4 @@
+Install this dependecies to your python:
+pip install opencv-python
+pip install rpi-ws281x
+pip install adafruit-circuitpython-neopixel
