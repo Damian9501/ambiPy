@@ -1,4 +1,4 @@
-# ambiPy
+# ambiPy 🚀🚀🚀
 
 ## Description
 ambiPy is a low budget Philips Ambilight clone for *WS2812b Leds + RPi4* setup. System is based on Python script running on Raspberry Pi 4b with connected HDMI of the display. You can find my previous 'Ambilight clone' project [here](https://github.com/alehee/AmbiLed).
